@@ -1,4 +1,4 @@
-# import flet as ft 
+import flet as ft 
 import speedtest_cli as sp
 from flet import *
 import time
@@ -30,11 +30,11 @@ def main(page:Page):
         spacing=0,
         scroll=True
     )
-    line=Text(value='',font_family='sourcecode')
+    line=Text(value='',font_family='sourcecode1')
     terminal = Column()
     lines = []
     for i in range(0,8):
-        line=Text(value='',font_family='sourcecode')
+        line=Text(value='',font_family='sourcecode1')
         if i==0:
             line.value='> Press start'
             line.color='#ffffff'
