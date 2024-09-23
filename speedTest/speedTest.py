@@ -7,7 +7,9 @@ import re
 st = sp.Speedtest()
 def main(page:Page):
     page.title='speed test'
-    page.theme_mode='dark'
+    page.window.width=480
+    page.window.height=640
+    page.theme_mode='dark'    
     page.vertical_alignment='center'
     page.horizontal_alignment='center'
     page.bgcolor='black'
