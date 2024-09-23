@@ -100,7 +100,7 @@ def main(page:Page):
             speed_container.update()
             time.sleep(2)
             
-            speed_container.content.controls[3].value=f'> Connection established, status OK, Fetching download speed'
+            speed_container.content.controls[3].value=f'> Connection established,\n status OK,\n Fetching download speed'
             speed_container.update()
             progress=ProgressBar(width=400,color='#1100ff', bgcolor='#ffffff',opacity=1)    
             progressbar1=Row(controls=[progress],)
