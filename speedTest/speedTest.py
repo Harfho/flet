@@ -1,4 +1,4 @@
-import flet as ft 
+# import flet as ft 
 import speedtest_cli as sp
 from flet import *
 import time
@@ -14,8 +14,7 @@ def main(page:Page):
     page.horizontal_alignment='center'
     page.bgcolor='black'
     page.window.bgcolor='blue'
-    page.auto_scroll=True
-    1
+    page.auto_scroll=True    
     page.fonts={
       "titlefont":"fonts/RoosterPersonalUse-3z8d8.ttf",
       "sourcecode":"fonts/Code7X5Regular-ypBe.ttf",
