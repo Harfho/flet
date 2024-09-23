@@ -34,7 +34,7 @@ def main(page:Page):
     terminal = Column()
     lines = []
     for i in range(0,8):
-        line=Text(value='',font_family='sourcecode')
+        line=Text(value='',font_family='sourcecode1')
         if i==0:
             line.value='> Press start'
             line.color='#ffffff'
