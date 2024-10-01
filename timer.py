@@ -55,6 +55,7 @@ class Mytimer(Column):
         if(self.sec==0):
             self.controls.append(ft.ElevatedButton(text='Reset',icon=ft.icons.RESTORE,on_click=self.reset))
             self.update()
+    
     def reset(self,e):
         print(self.controls)
         self.controls.pop()
@@ -63,11 +64,12 @@ class Mytimer(Column):
         self.did_mount()
         
     def did_mount(self):
-        threading.Thread(target=self.count_down,args=[],daemon=True).start()
+        threading.Thread(target=self.count_down,args=[],daemon=False).start()
         
 def main(page:Page):
     page.window.width=200
     page.window.height=200
+    page.window.always_on_top=True
     ft1=Mytimer(60) 
     ft2=Mytimer(120)
     page.add(Column(controls=[
